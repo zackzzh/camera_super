@@ -1,0 +1,398 @@
+import zhLocale from 'element-ui/lib/locale/lang/zh-CN' //引入element语言包
+const cn = {
+  message: {
+    'text': '好好学习，天天向上',
+  },
+  header: {
+    tabsHomeOne: '首页',
+    tabsHomeTwo: '产品中心',
+    tabsHomeThree: '我的询价',
+    tabsHomeFour: '我的订单',
+    tabsHomeFive: '关于我们',
+    logoNmae: '摄超商城',
+    login: '登录',
+    register: '注册',
+    basicSet: '个人设置',
+    Logout: '退出登录',
+    message: '消息'
+  },
+  home: {
+    serviceDynamics: '服务动态',
+    recommendCommodities: '推荐商品',
+    placeholder: '标题查询',
+    more: '查看更多',
+    recommend: '推荐',
+  },
+  product: {
+    placeholder: '标题查询',
+    brandCategory: '品牌分类',
+    productCategory: '产品分类',
+    all: '全部',
+    stock: '库存',
+    monthlySales: '月销量',
+    goBuy: '前往抢购'
+  },
+  productDetail: {
+    crumb: '产品中心',
+    supplyDetails: '供应详情',
+    stock: '库存',
+    monthlySales: '月销量',
+    color: '颜色',
+    number: '数量',
+    addCart: '加入购物车',
+    buyNow: '立即购买',
+    addBargainingList: '添加至议价单',
+    prompt: '若以上价格、存量不满足你的需求，可联系客服，我们将为你协商解决',
+    onlineService: '在线客服',
+    productDesciption: '商品介绍',
+    specifications: '规格参数'
+  },
+  bargain: {
+    stepOne: '编辑议价单',
+    stepTwo: '收货地址',
+    stepThree: '完成',
+    title: '我要议价',
+    businessInformation: '商家信息',
+    unitPriceNegotiation: '单价议价',
+    number: '数量',
+    intentionalPrice: '意向价格',
+    originalPrice: '原价',
+    currentTotalPrice: '现总价',
+    originalTotalPrice: '原总价',
+    delete: '删除',
+    generateBargainList: '生成议价单',
+    colorCategory: '颜色分类'
+  },
+  bargainSuccess: {
+    submitCompleted: '提交完成',
+    tipOne: '您的议价单已提交成功，您可在',
+    tipTwo: '个人中心',
+    tipThree: '我的询价',
+    tipFour: '中查询历史询价记录，我们将尽快回复的询价，请留意平台客服的询价结果通知。',
+    onlineService: '如有其他疑问，可联系在线客服',
+  },
+  cartAddress: {
+    receivingAddress: '收货地址',
+    selectShippingAddress: '选择收货地址',
+    plaeseSelectShippingAddress: '请选择收货地址',
+    setAsDefault: '设为默认',
+    consignee: '收货人',
+    phoneCode: '电话区号',
+    placeholdephoneCode: '请选择电话区号',
+    cellphoneNumber: '手机号码',
+    area: '所在地区',
+    address: '详细地址',
+    addShippingAddress: '新增收货地址',
+    placeholderPeople: '请输入收货人',
+    placeholderMobile: '请输入手机号码',
+    placeholderAddress: '请输入详细地址',
+    setAsDefaultAddress: '设为默认地址',
+    confirmSave: '确认保存',
+    confirm: '确定',
+  },
+  enquire: {
+    bargain: '去议价',
+    myInquirySheet: '我的询价单',
+    all: '全部',
+    submit: '待提交',
+    pendingReview: '待审核',
+    agreed: '已同意',
+    auditNotPassed: '审核不通过',
+    completed: '已完成',
+    cancelled: '已取消',
+    placeholderOlder: '请输入订单号',
+    orderNumber: '订单编号',
+    createdTime: '创建时间',
+    color: '颜色',
+    details: '查看详情',
+    noData: '暂无数据'
+  },
+  enquireDetail: {
+    myInquirySheet: '我的询价单',
+    bargainingNumber: '议价编号',
+    createdTime: '创建时间',
+    titleA: '平台将在42小时内对您的订单进行审核，请耐心等待',
+    titlePo: '厂商已同意您的价格，请您点击 ',
+    titlePs: '去结算',
+    titlepth: '完成交易',
+    titleFo: '厂商已驳回您的意向价格，您可以点击',
+    titleFs: '重新议价',
+    titleFt: '完成协商',
+    titleC: '你已经取消了该议价单',
+    titleE: '该议价单已经完成',
+    product: '产品',
+    parameter: '参数',
+    quantity: '数量',
+    intentionPrice: '意向单价',
+    finalprice: '最终单价',
+    totalprice: '意向总价',
+    approvalprice: '最终批复价',
+    giveup: '放弃议价',
+    thinkagain: '我再想想',
+    Regeneratebargaining: '重新生成议价单',
+    all: '全部',
+    pendingReview: '待审核',
+    agreed: '已同意',
+    auditNotPassed: '审核不通过',
+    completed: '已完成',
+    cancelled: '已取消',
+    color: '颜色',
+    completedprice: '按批复价成交',
+  },
+  cart: {
+    stepOne: '购物车',
+    stepTwo: '收货地址',
+    stepThree: '提交订单',
+    selectall: '全选',
+    description: '描述',
+    unitprice: '单价',
+    quantity: '数量',
+    totalprice: '总价',
+    delete: '删除',
+    color: '颜色',
+    bill: '账单',
+    totalpayment: '总支付',
+    remark: '给买家留言',
+    placeholderremark: '选填',
+    continueshopping: '继续购物',
+    settlement: '结算',
+  },
+  cartSuucess: {
+    bankno: '户口号码',
+    bankAccount: '户口名称',
+    bankAddress: '收款銀行地址',
+    bankCode: '銀行代号',
+    bankName: '收款銀行',
+    companyAddress: '公司地址',
+    swiftCode: 'SWIFT代號',
+    submitcompleted: '提交完成',
+    tipOne: '您的订单已提交成功，您可在',
+    tipTwo: '个人中心',
+    tipThree: '我的订单',
+    tipFour: '中查询历史订单记录，',
+    tipFive: '订单已生成，请您到指定银行卡打款,账户如下',
+    tipseven: '如有其他疑问，可联系在线客服',
+    tipeight: '我的订单',
+  },
+  order: {
+    product: '商品',
+    parameter: '属性',
+    unitprice: '单价',
+    quantity: '数量',
+    realpayment: '实付款',
+    express: '快递单号',
+    transaction: '交易状态',
+    createdTime: '下单时间',
+    orderNumber: '订单编号',
+    color: '颜色',
+    receiving: '收货地址',
+    all: '全部',
+    Pendingpayment: '待支付',
+    Alreadypaid: '已支付',
+    Alreadyshipped: '已发货',
+    completed: '已收货',
+    cancelled: '已取消',
+    placeholderOlder: '请输入订单号',
+    online: '如果订单已经支付过，请立即联系客服。',
+    Numbering: '编号',
+    transactionoperation: '交易操作',
+    orderdetails: '订单详情',
+    Confirmreceipt: '确认收货',
+    cancelorder: '取消订单',
+    ContactService: '联系客服',
+    noData: '暂无数据',
+    Paymenttime: '付款时间',
+    Current: '当前订单状态',
+    nopay: '如果还未付款订单',
+    back: '返回首页',
+    procurement: '采购中',
+    logic: [{
+        label: '采购中'
+      },
+      {
+        label: '货物到达广州仓'
+      },
+      {
+        label: '货物已从广州仓发出'
+      },
+      {
+        label: '货物到达香港仓'
+      },
+      {
+        label: '货物已从香港仓发出'
+      }
+    ]
+  },
+  footer: {
+    fd: [{
+        label: '关于我们',
+        path: 'aboutc'
+      },
+      {
+        label: '联系我们',
+        path: 'contactUs'
+      },
+      {
+        label: '购物流程',
+        path: 'shopping'
+      },
+      {
+        label: '常见问题',
+        path: 'problem'
+      },
+      {
+        label: '服务协议',
+        path: 'cooperation'
+      },
+      {
+        label: '友情链接',
+        path: 'friendshipLink'
+      },
+      {
+        label: '隐私政策',
+        path: 'privacy'
+      },
+      {
+        label: '开票信息',
+        path: 'invoice'
+      },
+    ],
+    about: '关于我们',
+    contact: '联系我们',
+    process: '购物流程',
+    problem: '常见问题',
+    Service: '服务协议',
+    Links: '友情链接',
+    Policy: '隐私政策',
+    Billing: '开票信息',
+    zipCode: '邮政编码',
+    wechatNumber: '微信号码',
+    officePhone: '办公电话',
+    address: '联系地址'
+  },
+  login: {
+    welcome: '欢迎登录',
+    back: '返回首页',
+    Userlogin: '用户登录',
+    placeholderUsername: '请输入邮箱或用户名',
+    placeholderPassword: '请输入密码',
+    LoginStatus: '保持登录状态',
+    forget: '忘记密码',
+    login: '登录',
+    noAccount: '未有账号？去注册'
+  },
+  forget: {
+    resetPassword: '重置密码',
+    email: '邮箱',
+    emalcode: '发送邮箱验证码',
+    code: '验证码',
+    newPassword: '新密码'
+  },
+  register: {
+    detailOne: '注册账号',
+    detailTwo: '邮箱认证成功后可作为平台账号登录',
+    username: '用户名：',
+    password: '登录密码：',
+    email: '邮箱：',
+    emalcode: '发送邮箱验证码',
+    code: '验证码：',
+    companyName: '公司名称：',
+    companyPhone: '公司电话：',
+    type: '用户类型：',
+    typeO: '找货',
+    typeT: '发布货源',
+    checked: '我同意《超摄商城网站服务条款》',
+    myAccount: '创建我的账号',
+    validateCode: '邮箱验证码不能为空',
+    validateCompanyPhone: '公司电话不能为空',
+    validateCompanyName: '公司名称不能为空',
+    validateEmailo: '邮箱不能为空',
+    validateEmailt: '邮箱格式不正确',
+    validatePasswordreg: '密码格式至少8-16个字符，至少1个大写字母，1个小写字母和1个数字，其他可以是任意字符',
+    validatePassword: '密码不能为空',
+    validateUsername: '用户名不能为空',
+    protocol: '请在用户协议上打勾'
+  },
+  basicSet: {
+    Province: '国家：',
+    placeholderProvince: '请输入国家',
+    placeholderCity: '请输入城市',
+    City: '城市：',
+    sample: '示例',
+    country: '国家',
+    placeholderCountry: '请选择国家',
+    Personalsettings: '个人设置',
+    data: [{
+      label: '资料设置',
+      id: "1-1",
+      children: [{
+        label: '基本信息',
+        id: '1-1'
+      }]
+    }, {
+      label: '安全设置',
+      id: "2-1",
+      children: [{
+        label: '修改密码',
+        id: '2-1'
+      }]
+    }, {
+      label: '我的地址',
+      id: "3-1",
+      children: [{
+        label: '我的收货地址',
+        id: '3-1'
+      }]
+    }, {
+      label: '身份验证',
+      id: "4-1",
+      children: [{
+        label: '身份实名认证',
+        id: '4-1'
+      }]
+    }],
+    basicInfo: '基本信息',
+    location: '所在地：',
+    Detailedaddress: '详细地址：',
+    placeholderaddress: '请输入详细地址',
+    telephone: '电话号码：',
+    placeholdertelephone: '请输入电话号码',
+    email: '电子邮箱：',
+    picHead: '头像照片',
+    save: '保存信息',
+    provinces: '请完善省市区',
+    uploadavatar: '请上传头像',
+    upload: '上传',
+    delete: '删除',
+    changePassword: '修改密码',
+    password: '旧密码：',
+    newPassword: '新密码：',
+    comPassword: '再次确认密码：',
+    Confirmchange: '确认修改密码',
+    placeholderold: '请输入旧密码',
+    placeholdernew: '请输入新密码',
+    placeholdercom: '请再次确认密码',
+    validateoldPassword: '旧密码不能为空',
+    validatenewPassword: '新密码不能为空',
+    validatecomPassword: '确认密码不能为空',
+    Inconsistent: '两次密码输入不一致',
+    validatePasswordreg: '密码格式至少8-16个字符，至少1个大写字母，1个小写字母和1个数字，其他可以是任意字符',
+    Myaddress: '我的收货地址',
+    Addaddress: '新增收货地址',
+    edit: '编辑',
+    back: '返回',
+    Realname: '实名身份认证',
+    actualname: '真实姓名:',
+    placeholdername: '请输入真实姓名',
+    idcardNo: '身份证号:',
+    placeholderidcardNo: '请输入身份证号',
+    idcardPic: '上传证件照片',
+    upIdcard: '请上传身份证',
+    placeholderidcardNoreg: '身份证号格式不正确',
+    placeholderId: '请选择证件类型',
+    DocumentType: '证件类型'
+  },
+  ...zhLocale
+}
+
+export default cn;

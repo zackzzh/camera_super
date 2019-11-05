@@ -1,0 +1,402 @@
+import enLocale from 'element-ui/lib/locale/lang/en' //引入element语言包
+const en = {
+  message: {
+    'text': 'Good good study, Day day up',
+  },
+  header: {
+    tabsHomeOne: 'Home',
+    tabsHomeTwo: 'Product Center',
+    tabsHomeThree: 'My Inquiry',
+    tabsHomeFour: 'My Order',
+    tabsHomeFive: 'About Us',
+    logoNmae: 'Super Mall',
+    login: 'Login',
+    register: 'Register',
+    basicSet: 'Personal Settings',
+    Logout: 'Logout',
+    message: 'Message'
+  },
+  home: {
+    serviceDynamics: 'Service dynamics',
+    recommendCommodities: 'Featured Products',
+    placeholder: 'Search',
+    more: 'see more',
+    recommend: 'Recommended',
+  },
+  product: {
+    placeholder: 'Product Search',
+    brandCategory: 'Brand Category',
+    productCategory: 'Product Category',
+    all: 'All',
+    stock: 'Avaliable Stock',
+    monthlySales: 'Monthly Sales',
+    goBuy: 'View'
+  },
+  productDetail: {
+    crumb: 'Product Center',
+    supplyDetails: 'Supply Details',
+    stock: 'Stock',
+    monthlySales: 'Monthly Sales',
+    color: 'Color',
+    number: 'Quantity',
+    addCart: 'Add to Cart',
+    buyNow: 'Buy Now',
+    addBargainingList: 'Negotiation List',
+    prompt: 'Bulk buy price and stock negotiable, contact customer service to negotiate',
+    onlineService: 'Online Service',
+    productDesciption: 'Product Desciption',
+    specifications: 'Specifications'
+  },
+  bargain: {
+    stepOne: 'Negotiation',
+    stepTwo: 'Shipping Address',
+    stepThree: 'Complete',
+    title: 'Negotiate',
+    businessInformation: 'Business Information',
+    unitPriceNegotiation: 'Unit Price Negotiation',
+    number: 'Quantity',
+    intentionalPrice: 'Intentional Price',
+    originalPrice: 'Original Price',
+    currentTotalPrice: 'Current Total Price',
+    originalTotalPrice: 'Original Total Price',
+    delete: 'Delete',
+    generateBargainList: 'Negotiate',
+    colorCategory: 'Color Category'
+  },
+  bargainSuccess: {
+    submitCompleted: 'Submit Completed',
+    tipOne: 'Your bargaining order has been submitted successfully, you can',
+    tipTwo: 'Personal Center',
+    tipThree: 'My Inquiry',
+    tipFour: 'In the inquiry of the historical inquiry record, we will reply the inquiry as soon as possible, please pay attention to the inquiry result notification of the platform customer service.',
+    Service: 'If you have any other questions, please contact online customer service.',
+  },
+  cartAddress: {
+    receivingAddress: 'Shipping Address',
+    selectShippingAddress: 'Select Shipping Address',
+    plaeseSelectShippingAddress: 'Please select shipping address',
+    setAsDefault: 'Set as Default',
+    consignee: 'Consignee',
+    phoneCode: 'Country Code',
+    placeholdephoneCode: 'Please choose the telephone area code.',
+    cellphoneNumber: 'Mobile No.',
+    area: 'Area',
+    address: 'Address',
+    addShippingAddress: 'Add Shipping Address',
+    placeholderPeople: 'Please enter the consignee',
+    placeholderMobile: 'Please enter your mobile number',
+    placeholderAddress: 'Please enter the full address',
+    setAsDefaultAddress: 'Set As Default',
+    confirmSave: 'Confirm',
+    confirm: 'Confirm',
+  },
+  enquire: {
+    bargain: 'Negotiate',
+    submit: 'To Submit',
+    myInquirySheet: 'My Inquiry Sheet',
+    bargainingNumber: 'Negotiation Number',
+    createdTime: 'Created Time',
+    all: 'All',
+    pendingReview: 'Pending',
+    agreed: 'Agreed',
+    auditNotPassed: 'Rejected',
+    completed: 'Completed',
+    cancelled: 'Cancelled',
+    placeholderOlder: 'Negotiation No.',
+    completedprice: 'Completed by batch price',
+    color: 'Color',
+    details: 'View Details',
+    noData: 'No Data'
+  },
+  enquireDetail: {
+    titlePs:'Check Out',
+    myInquirySheet: 'My Inquiry Sheet',
+    bargainingNumber: 'Negotiation Number',
+    createdTime: 'Created Time',
+    titleA: 'The platform will review your order within 42 hours, please be patient',
+    titlePo: 'The manufacturer has agreed to your price, please click',
+    titlePt: 'Settle Accounts',
+    titlepth: 'Complete Transaction',
+    titleFo: 'The manufacturer has rejected your intention price, you can click',
+    titleFs: 'Renegotiation',
+    titleFt: 'Complete Negotiation',
+    titleC: 'You have cancelled the bargain',
+    titleE: 'The bargaining order has been completed',
+    product: 'Product',
+    parameter: 'Parameter',
+    quantity: 'Quantity',
+    intentionPrice: 'Intention Price',
+    finalprice: 'Final Unit Price',
+    totalprice: 'Intent Total Price',
+    approvalprice: 'Final Approval Price',
+    giveup: 'Give Up Bargaining',
+    thinkagain: 'I Think Again',
+    Regeneratebargaining: 'Regenerate the bargaining list',
+    all: 'All',
+    pendingReview: 'Pending Review',
+    agreed: 'Agreed',
+    auditNotPassed: 'Audit Not Passed',
+    completed: 'Completed',
+    cancelled: 'Cancelled',
+    placeholderOlder: 'Please enter the bargain number',
+    completedprice: 'Completed By Batch Price',
+    color: 'Color',
+    viewDetails: 'View Details',
+    noData: 'No data'
+  },
+  cart: {
+    stepOne: 'Shopping Cart',
+    stepTwo: 'Receiving Address',
+    stepThree: 'Submit Order',
+    selectall: 'Select All',
+    description: 'Description',
+    unitprice: 'Unit Price',
+    quantity: 'Quantity',
+    totalprice: 'Total Price',
+    delete: 'Delete',
+    color: 'Color',
+    bill: 'Bill',
+    totalpayment: 'Total Payment',
+    remark: 'Message To The Buyer',
+    placeholderremark: 'Optional',
+    continueshopping: 'Continue Shopping',
+    settlement: 'Check Out',
+  },
+  cartSuucess: {
+    bankno: 'Account Number',
+    bankAccount: 'Account Name',
+    bankAddress: 'Beneficiary Bank address',
+    bankCode: 'Bank Code',
+    bankName: 'Beneficiary Bank',
+    companyAddress: 'Company Address',
+    swiftCode: 'SWIFT Code',
+    submitcompleted: 'Submit Completed',
+    tipOne: 'Your order has been submitted successfully, you can',
+    tipTwo: 'Personal Center',
+    tipThree: 'My Order',
+    tipFour: 'Query Historical Order Records,',
+    tipFive: 'The order has been generated, please go to the designated bank card to make a payment, the account is as follows',
+    tipseven: 'If you have any other questions, please contact online customer service.',
+    tipeight: 'My Order',
+  },
+  order: {
+    product: 'Product',
+    parameter: 'Parameter',
+    unitprice: 'Unit Price',
+    quantity: 'Quantity',
+    realpayment: 'Actual Payment',
+    express: 'Delievery No.',
+    transaction: 'Trading Status',
+    createdTime: 'Created Time',
+    orderNumber: 'Order Number',
+    placeholderOlder: 'Order No.',
+    color: 'Color',
+    receiving: 'Shipping address',
+    all: 'All',
+    Pendingpayment: 'Pending Payment',
+    Alreadypaid: 'Already Paid',
+    Alreadyshipped: 'Already Shipped',
+    completed: 'Goods Received',
+    cancelled: 'Cancelled',
+    online: 'If the order has already been paid, please contact customer service immediately',
+    Numbering: 'Order Number',
+    transactionoperation: 'Trading Operation',
+    orderdetails: 'Order Details',
+    Confirmreceipt: 'Confirm receipt',
+    cancelorder: 'cancel order',
+    ContactService: 'Contact Service',
+    noData: 'No Data',
+    Paymenttime: 'Payment Time',
+    Current: 'Current Order Status',
+    nopay: 'If the order has not been paid',
+    back: 'Back to home',
+    procurement: 'Procuring',
+    logic: [{
+        label: 'Procuring'
+      }, {
+        label: 'The goods arrived in Guangzhou warehouse'
+      },
+      {
+        label: 'The goods have been issued from Guangzhou warehouse'
+      },
+      {
+        label: 'Goods arrive in Hong Kong warehouse'
+      },
+      {
+        label: 'The goods have been issued from Hong Kong warehouse'
+      }
+    ]
+  },
+  footer: {
+    fd: [{
+        label: 'About Us',
+        path: 'aboutc'
+      },
+      {
+        label: 'Contact Us',
+        path: 'contactUs'
+      },
+      {
+        label: 'Shopping Process',
+        path: 'shopping'
+      },
+      {
+        label: 'Common Problem',
+        path: 'problem'
+      },
+      {
+        label: 'Service Agreement',
+        path: 'cooperation'
+      },
+      {
+        label: 'Links',
+        path: 'friendshipLink'
+      },
+      {
+        label: 'Privacy Policy',
+        path: 'privacy'
+      },
+      {
+        label: 'Billing Information',
+        path: 'invoice'
+      },
+    ],
+    about: 'ABOUT US',
+    contact: 'CONTACT US',
+    process: 'SHOPPING PROCESS',
+    problem: 'COMMON PROBLEM',
+    Service: 'SERVICE AGREEMENT',
+    Links: 'LINKS',
+    Policy: 'PRIVACY POLICY',
+    Billing: 'BILLING INFORMATION',
+    zipCode: 'Postal Code',
+    wechatNumber: 'Micro SIGNAL',
+    officePhone: 'Office Phone',
+    address: 'Contact Address'
+  },
+  login: {
+    welcome: 'Welcome Login',
+    back: 'Home',
+    Userlogin: 'User Login',
+    placeholderUsername: 'Username / E-mail',
+    placeholderPassword: 'Password',
+    LoginStatus: 'Stay Logged In',
+    forget: 'Forget Your Password?',
+    login: 'Login',
+    noAccount: 'Not a member? Register now!'
+  },
+  forget: {
+    resetPassword: 'Reset Password',
+    email: 'E-mail:',
+    emalcode: 'Send Email Verification Code',
+    code: 'Verification Code',
+    newPassword: 'New Password'
+  },
+  register: {
+    detailOne: 'Register Account:',
+    detailTwo: 'You can login after e-mail authentication',
+    username: 'Username:',
+    password: 'Login Password:',
+    email: 'E-mail:',
+    emalcode: 'Send Email Verification Code',
+    code: 'Verification Code:',
+    companyName: 'Company Name:',
+    companyPhone: 'Company Phone:',
+    type: 'User Type:',
+    typeO: 'Purchaser',
+    typeT: 'Supplier',
+    checked: 'I agree to the Super Camera Mall Website Terms of Service.',
+    myAccount: 'Create My Account',
+    validateCode: 'Email verification code cannot be empty',
+    validateCompanyPhone: 'Company phone cannot be empty',
+    validateCompanyName: 'Company name cannot be empty',
+    validateEmailo: 'Mailbox cannot be empty',
+    validateEmailt: 'The mailbox format is incorrect',
+    validatePasswordreg: 'The password format is at least 8-16 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number. Others can be any character.',
+    validatePassword: 'password can not be blank',
+    validateUsername: 'Username can not be empty',
+    protocol: 'Please tick the user agreement'
+  },
+  basicSet: {
+    Province:'Country',
+    placeholderProvince: 'Please enter country',
+    placeholderCity: 'Please enter city',
+    City:'City',
+    sample: 'Sample',
+    country: 'Country',
+    placeholderCountry: 'Please select country',
+    Personalsettings: 'Personal Settings',
+    data: [{
+      label: 'Data Setting',
+      id: "1-1",
+      children: [{
+        label: 'Basic Information',
+        id: '1-1'
+      }]
+    }, {
+      label: 'Security Settings',
+      id: "2-1",
+      children: [{
+        label: 'Change Password',
+        id: '2-1'
+      }]
+    }, {
+      label: 'My Address',
+      id: "3-1",
+      children: [{
+        label: 'My Shipping Address',
+        id: '3-1'
+      }]
+    }, {
+      label: 'Authentication',
+      id: "4-1",
+      children: [{
+        label: 'ID Authentication',
+        id: '4-1'
+      }]
+    }],
+    basicInfo: 'Basic Information',
+    location: 'Location',
+    Detailedaddress: 'Detailed Address',
+    placeholderaddress: 'Please enter the full address',
+    telephone: 'Telephone Number',
+    placeholdertelephone: 'Please enter your phone number',
+    email: 'E-mail',
+    picHead: 'Personal Photo',
+    save: 'Save',
+    provinces: 'Please complete provinces',
+    uploadavatar: 'Please upload an avatar',
+    upload: 'Upload',
+    delete: 'Delete',
+    changePassword: 'Change Password',
+    password: 'Old Password:',
+    newPassword: 'New Password:',
+    comPassword: 'Re-enter New Password:',
+    Confirmchange: 'Confirm',
+    placeholderold: 'Please enter the old password',
+    placeholdernew: 'Please enter a new password',
+    placeholdercom: 'Please Re-enter New Password',
+    validateoldPassword: 'Old password cannot be empty',
+    validatenewPassword: 'New password cannot be empty',
+    validatecomPassword: 'confirm password can not be blank',
+    Inconsistent: 'Two password entries are inconsistent',
+    validatePasswordreg: 'The password format is at least 8-16 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number. Others can be any character.',
+    Myaddress: 'My shipping address',
+    Addaddress: 'New shipping address',
+    edit: 'Edit',
+    back: 'Back',
+    Realname: 'Real-Name Authentication',
+    actualname: 'Full Name:',
+    placeholdername: 'please enter your full name',
+    idcardNo: 'Passport Number:',
+    placeholderidcardNo: 'please enter your passport number',
+    idcardPic: 'Upload ID Page',
+    upIdcard: 'Please upload an ID card',
+    placeholderidcardNoreg: 'ID card format is incorrect',
+    placeholderId: 'Please select document type',
+    DocumentType: 'Document Type'
+  },
+  ...enLocale
+}
+
+export default en;
